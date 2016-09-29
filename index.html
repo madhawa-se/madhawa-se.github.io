@@ -45,7 +45,6 @@
             .section1{
                 background-color: #29D385;
                 height: 700px;
-                background-image: url("giphy.gif");
                 background-repeat: no-repeat;
                 background-size: cover;
             }
@@ -55,13 +54,15 @@
             /* >> me content*/
             .me{
                 margin-top: 100px;
+                text-align: center;
             }
             .me-name{
                 color: #fff;
-                font-size: 70px;
+                font-size: 100px;
                 font-family: roboto;
                 font-weight: 400;
-                text-align: center;
+                letter-spacing: 30px;
+                margin-top: 180px;
 
             }
             .me-end{
@@ -100,9 +101,30 @@
             }
             .slide-step a.active{
                 background-color: rgba(255, 255, 255, 0);
-                border: 2px solid rgb(255, 255, 255);
+                border: 1px solid rgb(255, 255, 255);
             }
             /* << me content*/
+            .hero-bg>video{
+                width:100%;
+            }
+            .hero{
+                height: 500px;
+                overflow: hidden;
+            }
+            .hero-bg{
+                position: relative;
+                width:100%;
+                top:0px;
+            }
+            .hero-overlay,.hero-text{
+                position: absolute;
+                width:100%;
+                top:58px;
+                height:500px; 
+            }
+            .hero-overlay{
+                background-color: rgba(0, 0, 0, 0.40);
+            }
         </style>
         <script>
 
@@ -124,19 +146,24 @@
         </div>
         <!--menu > -->
         <div class="section1">
-
-
-            <div class="section1-wrap container">
-                <div class="row">
-                    <div class="me">
-                        <h1 class="me-name">MADHAWA</h1>
-                        <i>we build the web</i>
-                        <br>
-                        <span class="me-end">front end <span> + </span>back end</span>
+            <div class="hero">
+                <div class="hero-bg">
+                    <video autoplay loop muted="">
+                        <source src="video/time_interception.mp4" type="video/mp4" />
+                    </video>
+                </div>
+                <div class="hero-overlay"></div>
+                <div class="hero-text container">
+                    <div class="row">
+                        <div class="me">
+                            <h1 class="me-name">MADHAWA</h1>
+                            <i>we build the web</i>
+                            <br>
+                            <span class="me-end">front end <span> + </span>back end</span>
+                        </div>
                     </div>
                 </div>
             </div>
-
 
         </div>
         <div>
