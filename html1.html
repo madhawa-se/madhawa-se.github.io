@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/bootstrap.min.css" rel="stylesheet"> 
+        <style>
+
+            body{
+                margin: 0;
+                background-color: #010001;
+            }
+            /* menu > */
+            .menu-warapper{
+                background-color: #ffffff;
+            }
+            .menu-items>ul{
+                list-style-type: none;
+                padding-top: 5px;
+                color: #626262;
+            }
+            .menu-items>ul>li{
+                float: left;
+                padding: 5px 10px;
+                text-align: right;
+                font-family: arial;
+                font-weight: 600;
+                font-size: 11px;
+                letter-spacing: 2px;
+                text-transform: uppercase;
+            }
+            .menu>.logo{
+                padding: 20px 0px;
+                color: #000;
+                font-family: lato;
+                font-weight: 900;
+                letter-spacing: 3px;
+            }
+            /* menu < */
+
+            /* > section 1 <*/
+
+            .section1{
+                background-color: #29D385;
+                height: 700px;
+                background-image: url("giphy.gif");
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+
+            /* section 1 <*/
+
+            /* >> me content*/
+            .me{
+                margin-top: 100px;
+            }
+            .me-name{
+                color: #fff;
+                font-size: 70px;
+                font-family: roboto;
+                font-weight: 400;
+                text-align: center;
+
+            }
+            .me-end{
+                color: #878787;
+                font-size: 12px;
+                font-family: Merriweather;
+            }
+            .me-end > span{
+                color:rgb(21, 255, 6);
+            }
+            .slide-step{
+                position: fixed;
+                top:150px;
+            }
+            .slide-step>ul>li{
+                width: 14px;
+                height: 13px;
+                margin: 7px;
+                margin-top: 20px;
+            }
+            .slide-step span{
+                background: #FFF;
+                border-color: #FFF;
+                width: 6px;
+                height: 6px;
+            }
+            .slide-step>ul{
+                list-style-type: none;
+            }
+            .slide-step a{
+                width: 10px;
+                height: 10px;
+                display: inline-block;
+                background-color: #fff;
+                border-radius: 50%;
+            }
+            .slide-step a.active{
+                background-color: rgba(255, 255, 255, 0);
+                border: 2px solid rgb(255, 255, 255);
+            }
+            /* << me content*/
+        </style>
+        <script>
+
+        </script>
+    </head>
+    <body>
+        <!-- < menu -->
+        <div class="menu-warapper">
+            <div class="menu container">
+                <div class="logo col-sm-2">portfolio</div>
+                <div class="menu-items col-sm-10">
+                    <ul class="pull-right">
+                        <li>about .</li>
+                        <li>work .</li>
+                        <li>contact</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--menu > -->
+        <div class="section1">
+
+
+            <div class="section1-wrap container">
+                <div class="row">
+                    <div class="me">
+                        <h1 class="me-name">MADHAWA</h1>
+                        <i>we build the web</i>
+                        <br>
+                        <span class="me-end">front end <span> + </span>back end</span>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <div>
+            <pre class="me_name" id="me_name">MADHAWA PRIYASHANTHA</pre>
+        </div>
+        <div class="progress">
+            <canvas id="canvas" width="600" height="600"></canvas>
+        </div>
+        <div class="slide-step">
+            <ul>
+                <li><a class="active" href="#"><span></span></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+            </ul>
+        </div>
+    </body>
+</html>
