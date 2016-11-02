@@ -55,7 +55,7 @@ body {
 }
 
 .section2 {
-  background-image: url("../images/trianglebg.jpg");
+  background-image: url("images/trianglebg.jpg");
 }
 
 .me-name {
@@ -132,7 +132,7 @@ body {
 }
 
 .section4 {
-  background-image: url("http://localhost:8383/portelo/images/trianglebg.jpg");
+  background-image: url("images/trianglebg.jpg");
   background-attachment: fixed;
 }
 
@@ -181,7 +181,7 @@ body {
 }
 
 .section6 {
-  background-image: url("../images/trianglebg.jpg");
+  background-image: url("images/trianglebg.jpg");
   background-attachment: fixed;
 }
 
