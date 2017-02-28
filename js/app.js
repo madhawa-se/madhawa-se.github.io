@@ -6,6 +6,10 @@ function animatePro() {
         elem.eq(i).animate({width: pskill[i] + "%"}, 2000, 'swing');
     }
 }
+
+function getElemHightDif(outerBox) {
+
+}
 $(document).ready(function () {
 
     var waypoint = new Waypoint({
@@ -17,7 +21,36 @@ $(document).ready(function () {
     });
 
     $('body').animate({
-       // scrollTop: $(".middle").offset().top
+        // scrollTop: $(".middle").offset().top
     }, 2000);
+
+
+    $('.work-img').mouseenter(
+            function () {
+                var outerHeight = $(this).height();
+                var innerHeight = $(this).find('img').height();
+                if (outerHeight && innerHeight) {
+                    var dif = outerHeight - innerHeight;
+
+                    $(this).find("img").animate({
+                        top: dif,
+                    }, 3000, function () {
+                        // Animation complete.
+                    })
+                }
+
+
+            }
+    );
+    $('.work-img').mouseleave(
+            function () {
+                $(this).find("img").stop();
+                $(this).find("img").animate({
+                    top: 0,
+                }, 3000, function () {
+                    // Animation complete.
+                })
+            }
+    );
 
 });
