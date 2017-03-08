@@ -52,5 +52,19 @@ $(document).ready(function () {
                 })
             }
     );
-
+    $('.underline-anim').click(function (e) {
+        scrollSmooth(e);
+        return false;
+    });
 });
+
+function scrollSmooth(e) {
+    //alert("called");
+    var scrollLocs = ["aboutme", "work", "skills", "contact"];
+    var target = $(e.target);
+    var index = $('.underline-anim').index(target);
+    //alert(index);
+    $('html, body').animate({
+        scrollTop: $("#" + scrollLocs[index]).offset().top
+    }, 1000);
+}
