@@ -60,7 +60,7 @@ $(document).ready(function () {
 
 function scrollSmooth(e) {
     //alert("called");
-    var scrollLocs = ["aboutme", "work", "skills", "contact"];
+    var scrollLocs = ["aboutme", "skills", "work", "contact"];
     var target = $(e.target);
     var index = $('.underline-anim').index(target);
     //alert(index);
