@@ -11,7 +11,17 @@ function getElemHightDif(outerBox) {
 
 }
 $(document).ready(function () {
-
+    var message = {};
+    message.email = "madhawa.aaa@gmail.com";
+    message.subject = "message from portfolio";
+    message.body="from:";
+    
+    message.construct=function(){
+        var body=$("#message").val();
+        var name=$("#name").val();
+        var content="mailto:"+message.email+"?subject="+message.subject+"&body="+message.body+name+"%0D"+body;
+        $("#send").attr("href",content);
+    }
     var waypoint = new Waypoint({
         element: document.getElementsByClassName('section4')[0],
         handler: function () {
@@ -56,6 +66,9 @@ $(document).ready(function () {
         scrollSmooth(e);
         return false;
     });
+
+    $('#message').keydown(function(){message.construct()});
+    $('#name').keydown(function(){message.construct()});
 });
 
 function scrollSmooth(e) {
