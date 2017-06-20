@@ -69,6 +69,12 @@ $(document).ready(function () {
 
     $('#message').keydown(function(){message.construct()});
     $('#name').keydown(function(){message.construct()});
+    
+    $('.work-div').click(function (e) {
+        //alert();
+        $('#myModal').modal('show');
+    });
+    
 });
 
 function scrollSmooth(e) {
